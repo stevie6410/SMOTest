@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0024)http://localhost/SMOTest -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+         <TITLE>Could not load file or assembly 
+'Microsoft.SqlServer.BatchParser' or one of its dependencies. An attempt was 
+made to load a program with an incorrect format.</TITLE>         
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="viewport" content="width=device-width">         
+<STYLE>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </STYLE>
+     
+<META name="GENERATOR" content="MSHTML 11.00.9600.18792"></HEAD>     
+<BODY bgcolor="white"><SPAN>
+<H1>Server Error in '/SMOTest' Application.
+<HR width="100%" size="1" color="silver">
+</H1>
+<H2><I>Could not load file or assembly 'Microsoft.SqlServer.BatchParser' or one 
+of its dependencies. An attempt was made to load a program with an incorrect 
+format.</I> </H2></SPAN>             <FONT face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif "><B> 
+Description: </B>An unhandled exception occurred during the execution of the 
+current web request. Please review the stack trace for more information about 
+the error and where it originated in the code.             <BR><BR><B> Exception 
+Details: </B>System.BadImageFormatException: Could not load file or assembly 
+'Microsoft.SqlServer.BatchParser' or one of its dependencies. An attempt was 
+made to load a program with an incorrect format.<BR><BR><B>Source Error:</B> 
+<BR><BR>
+<TABLE width="100%" bgcolor="#ffffcc">
+  <TBODY>
+  <TR>
+    <TD><CODE>An unhandled exception was generated during the execution of the 
+      current web request. Information regarding the origin and location of the 
+      exception can be identified using the exception stack trace below.</CODE>  
+                       </TD></TR></TBODY></TABLE><BR><B>Assembly Load Trace:</B> The 
+following information can be helpful to determine why the assembly 
+'Microsoft.SqlServer.BatchParser' could not be loaded.<BR><BR>
+<TABLE width="100%" bgcolor="#ffffcc">
+  <TBODY>
+  <TR>
+    <TD><CODE>
+<PRE>
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+</PRE></CODE> 
+                        </TD></TR></TBODY></TABLE><BR><B>Stack Trace:</B> <BR><BR>
+<TABLE width="100%" bgcolor="#ffffcc">
+  <TBODY>
+  <TR>
+    <TD><CODE>
+<PRE>
+[BadImageFormatException: Could not load file or assembly 'Microsoft.SqlServer.BatchParser' or one of its dependencies. An attempt was made to load a program with an incorrect format.]
+   System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks) +0
+   System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks) +457
+   System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection) +110
+   System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark&amp; stackMark, Boolean forIntrospection) +22
+   System.Reflection.Assembly.Load(String assemblyString) +34
+   System.Web.Configuration.CompilationSection.LoadAssemblyHelper(String assemblyName, Boolean starDirective) +48
+
+[ConfigurationErrorsException: Could not load file or assembly 'Microsoft.SqlServer.BatchParser' or one of its dependencies. An attempt was made to load a program with an incorrect format.]
+   System.Web.Configuration.CompilationSection.LoadAssemblyHelper(String assemblyName, Boolean starDirective) +729
+   System.Web.Configuration.CompilationSection.LoadAllAssembliesFromAppDomainBinDirectory() +247
+   System.Web.Configuration.CompilationSection.LoadAssembly(AssemblyInfo ai) +157
+   System.Web.Compilation.BuildManager.GetReferencedAssemblies(CompilationSection compConfig) +226
+   System.Web.Compilation.BuildManager.GetPreStartInitMethodsFromReferencedAssemblies() +73
+   System.Web.Compilation.BuildManager.CallPreStartInitMethods(String preStartInitListPath, Boolean&amp; isRefAssemblyLoaded) +321
+   System.Web.Compilation.BuildManager.ExecutePreAppStart() +170
+   System.Web.Hosting.HostingEnvironment.Initialize(ApplicationManager appManager, IApplicationHost appHost, IConfigMapPathFactory configMapPathFactory, HostingEnvironmentParameters hostingParameters, PolicyLevel policyLevel, Exception appDomainCreationException) +878
+
+[HttpException (0x80004005): Could not load file or assembly 'Microsoft.SqlServer.BatchParser' or one of its dependencies. An attempt was made to load a program with an incorrect format.]
+   System.Web.HttpRuntime.FirstRequestInit(HttpContext context) +525
+   System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context) +124
+   System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context) +700
+</PRE></CODE> 
+                        </TD></TR></TBODY></TABLE><BR>
+<HR width="100%" size="1" color="silver">
+<B>Version Information:</B>&nbsp;Microsoft .NET Framework Version:4.0.30319; 
+ASP.NET Version:4.7.2106.0             </FONT>     </BODY></HTML><!-- 
+[BadImageFormatException]: Could not load file or assembly &#39;Microsoft.SqlServer.BatchParser&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at System.Web.Configuration.CompilationSection.LoadAssemblyHelper(String assemblyName, Boolean starDirective)
+[ConfigurationErrorsException]: Could not load file or assembly &#39;Microsoft.SqlServer.BatchParser&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.
+   at System.Web.Configuration.CompilationSection.LoadAssemblyHelper(String assemblyName, Boolean starDirective)
+   at System.Web.Configuration.CompilationSection.LoadAllAssembliesFromAppDomainBinDirectory()
+   at System.Web.Configuration.CompilationSection.LoadAssembly(AssemblyInfo ai)
+   at System.Web.Compilation.BuildManager.GetReferencedAssemblies(CompilationSection compConfig)
+   at System.Web.Compilation.BuildManager.GetPreStartInitMethodsFromReferencedAssemblies()
+   at System.Web.Compilation.BuildManager.CallPreStartInitMethods(String preStartInitListPath, Boolean& isRefAssemblyLoaded)
+   at System.Web.Compilation.BuildManager.ExecutePreAppStart()
+   at System.Web.Hosting.HostingEnvironment.Initialize(ApplicationManager appManager, IApplicationHost appHost, IConfigMapPathFactory configMapPathFactory, HostingEnvironmentParameters hostingParameters, PolicyLevel policyLevel, Exception appDomainCreationException)
+[HttpException]: Could not load file or assembly &#39;Microsoft.SqlServer.BatchParser&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.
+   at System.Web.HttpRuntime.FirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+-->
